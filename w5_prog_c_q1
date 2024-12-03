@@ -87,3 +87,44 @@ int main(int argc, const char *argv[]) {
     return 0;
 }
 
+// question compare 2 strings and se if they have thesame value.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(){
+char text1[40];
+char text2[40]
+
+printf("ange första sträng.");
+fgets(text1, sizeof(text1), stdn);
+
+printf("ange andra strängen");
+fgets(text2, sizeof(text2),stdn);
+
+if((text1,text)==0){
+printf("dem är lika!");
+}else{printf("dem är olika");
+}
+return 0;
+}
+
+//question 3 copy another string 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(int argc, const char * argv[]) {
+char text1 [100];
+char text2 [100];
+
+printf("ange strängen");
+fgets(text1,sizeof(text1),stdin);
+text1[strcspn(text1, "\n")]='\o';
+
+strcpy(text2,text1);
+
+printf("den nya strängen är %s", text2);
+return 0;
+}
+
