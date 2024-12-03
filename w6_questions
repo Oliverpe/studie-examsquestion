@@ -1,0 +1,30 @@
+// task building a lotto generator
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+int main(int argc, const char * argv[]) {
+    int lottorad[7];
+    int maxnum = 35;
+    int mininum = 1;
+    int lottorader;
+
+    srand(time(0));
+
+    printf("Ange antal lottrader: ");
+    scanf("%d", &lottorader);
+
+    for (int i = 0; i < lottorader; i++) {
+        for (int j = 0; j < 7; j++) {
+            lottorad[j] = (rand() % (maxnum - mininum + 1)) + mininum;
+        }
+        printf("Lottrad %d: ", i + 1);
+        for (int j = 0; j < 7; j++) {
+            printf("%d ", lottorad[j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
