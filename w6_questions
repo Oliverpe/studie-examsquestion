@@ -54,3 +54,27 @@ int main(int argc, const char * argv[]) {
 
     return 0;
 }
+
+//question Randomize 9 numbers between 21 and 78 and print it as a matrix (three rows and three 
+columns).// You should not create a matrix (or array) but only 9 "independent" numbers.
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+int main(int argc, const char * argv[]) {
+
+
+
+srand(time(0));
+
+printf("matrisen blir\n");
+for(int i=0;i<3;i++){
+    for(int j=0;j<3;j++){
+        int tal=rand()%(78-21+1)+21;
+        printf("%d ",tal);
+        }
+    printf("\n");
+    }
+return 0;
+}
