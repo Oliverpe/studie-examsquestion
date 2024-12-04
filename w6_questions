@@ -78,3 +78,24 @@ for(int i=0;i<3;i++){
     }
 return 0;
 }
+
+// randomize a number and then use a pointer to point on the randomize number useing diffrent variabals.
+int main(int argc, const char * argv[]) {
+
+
+
+srand(time(0));
+int tal=rand()%100;
+int *talptr=&tal;
+printf("%d\n",*talptr);
+
+float flotal= (float)rand()/RAND_MAX*100.0;
+float *floatptr=&flotal;
+printf("float:%.f\n",*floatptr);
+
+double tal3= (double)rand()/RAND_MAX*100.0;
+double *dotal3ptr=&tal3;
+printf("double:%lf",*dotal3ptr);
+
+return 0;
+}
