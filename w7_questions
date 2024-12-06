@@ -1,0 +1,67 @@
+// funktioner som avgör om talet är jämt eller udda.
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+int kontroll(int numb){
+if (numb % 2 == 0){
+    return 0;
+}else {
+    return 1;}
+}
+
+int numb(){
+    int tal;
+printf("ange det tal som ska avgöras: ");
+scanf("%d", &tal);
+return tal;
+}
+
+void udda(){
+    printf("ditt tal är udda\n");
+}
+
+void jamn(){
+    printf("ditt tal är jämt");
+}
+
+
+
+int main() {
+
+int tal = numb();
+if(kontroll(numb) == 0){
+    jamn();
+}else{
+udda();
+}
+return 0;
+}
+
+// skapa en miniräknare.
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+
+
+int calc(){
+int x;
+int y;
+
+printf("ange vilka tal du vill du slå ihop: ");
+    scanf("%d %d",&x, &y);
+int sum = x+y;
+return sum;
+}
+
+int main() {
+
+int resultat=calc();
+printf("reslultatet:%d\n", resultat);
+
+return 0;
+}
+
